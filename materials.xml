@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="1" name="uranium-dioxide" temperature="1200">
+    <density units="g/cm3" value="10.5" />
+    <nuclide ao="0.04" name="U235" />
+    <nuclide ao="0.96" name="U238" />
+    <nuclide ao="2.0" name="O16" />
+  </material>
+  <material id="2" name="zirconium" temperature="900">
+    <density units="g/cm3" value="6.6" />
+    <nuclide ao="0.5145" name="Zr90" />
+    <nuclide ao="0.1122" name="Zr91" />
+    <nuclide ao="0.1715" name="Zr92" />
+    <nuclide ao="0.1738" name="Zr94" />
+    <nuclide ao="0.028" name="Zr96" />
+  </material>
+  <material id="3" name="water">
+    <density units="g/cm3" value="0.75" />
+    <nuclide ao="2.0" name="H1" />
+    <nuclide ao="1.0" name="O16" />
+    <sab name="c_H_in_H2O" />
+  </material>
+  <material id="4" name="wrough-iron">
+    <density units="g/cm3" value="7.8" />
+    <nuclide name="Fe54" wo="5.6314443308340705" />
+    <nuclide name="Fe56" wo="91.6717749498509" />
+    <nuclide name="Fe57" wo="2.1549676958401447" />
+    <nuclide name="Fe58" wo="0.2918130234748875" />
+    <nuclide name="C0" wo="0.25" />
+  </material>
+</materials>

@@ -1,13 +1,14 @@
-# shannon-entropy
-Examining convergence of Monte Carlo simulations for nuclear fission reactors using the Shannon entropy.
+# Computational Reactor Physics - Shannon Entropy
+In this project the convergence of Monte Carlo simulations for nuclear fission reactors will be examined using the Shannon entropy. This is done using openMC and its python API together with numpy and matplotlib inside two jupyter notebooks. The results of the Monte Carlo calculations are stored in '/results', and the finalized plots can be found under '/plots'.
 
 ### Theory
 
-The Shannon entropy is a meassure of how spread out fission source sites are in the geometry of the Monte Carlo simulation. To do this, an entropy mesh is placed over the geometry, and each fission site is then counted to the meshgrid cell where it occured. Then the Shannon entropy for each generation is calculated using equation 1.
+The Shannon entropy is a measure of how spread-out fission source sites are in the geometry of the Monte Carlo calculation. To do this, an entropy mesh is placed over the geometry, and each fission site is then counted to the mesh cell where it occurred. Then the Shannon entropy for each generation is calculated using equation 1.
 
 ![Equation 1](https://raw.githubusercontent.com/OdinhengeT/shannon-entropy/master/equations/equation_1.png)
 
-Where N is the number of cells in the entropy mesh. In this way, a single number estimate of the "uniformness" (entropy) of the fission source sites can be obtained. This is usefull, because it is then much easier to asses the convergence of this meassure. rather than looking at the distribution in multiple dimensions. It can also be noted that the Shannon entropy is bound by the interval $S \in \left[0, \log_{2}(N)\right]$, where the maximal value is reached when the fission source site spread is perfectly uniform. 
+Where N is the number of cells in the entropy mesh. In this way, a single number estimate of the "uniformness" (entropy) of the fission source sites can be obtained. This is useful, because it is then much easier to assess the convergence of this measure. rather than looking at the distribution in multiple dimensions. It can also be noted that the Shannon entropy is bound by the interval $S \in \left[0, \log_{2}(N)\right]$, where the maximal value is reached when the fission source site spread is perfectly uniform. 
+
 
 ### Conclusions
 

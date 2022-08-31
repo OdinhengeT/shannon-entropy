@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>5000</particles>
+  <batches>250</batches>
+  <inactive>0</inactive>
+  <source strength="1.0">
+    <space type="point">
+      <parameters>16 16 0</parameters>
+    </space>
+  </source>
+  <output>
+    <path>results/geometry_2/batch250_particles5000_mesh32/</path>
+    <tallies>false</tallies>
+  </output>
+  <mesh id="9">
+    <dimension>32 32</dimension>
+    <lower_left>0.0 0.0 -inf</lower_left>
+    <upper_right>200.0 200.0 inf</upper_right>
+  </mesh>
+  <entropy_mesh>9</entropy_mesh>
+</settings>
