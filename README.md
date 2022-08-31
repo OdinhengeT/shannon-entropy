@@ -5,7 +5,7 @@ Examining convergence of Monte Carlo simulations for nuclear fission reactors us
 
 The Shannon entropy is a meassure of how spread out fission source sites are in the geometry of the Monte Carlo simulation. To do this, an entropy mesh is placed over the geometry, and each fission site is then counted to the meshgrid cell where it occured. Then the Shannon entropy for each generation is calculated using equation 1.
 
-$ S = - \sum_{i=1}^{N} p_{i} \cdot \log_{2}( p_{i} ), \;\;\; p_{i} = \frac{\text{\# fission source sites in i-th cell}}{\text{\# fission source sites in total}} $
+$S = - \sum_{i=1}^{N} p_{i} \cdot \log_{2}( p_{i} ), \;\;\; p_{i} = \frac{\text{\# fission source sites in i-th cell}}{\text{\# fission source sites in total}}$
 
 Where N is the number of cells in the entropy mesh. In this way, a single number estimate of the "uniformness" (entropy) of the fission source sites can be obtained. This is usefull, because it is then much easier to asses the convergence of this meassure. rather than looking at the distribution in multiple dimensions. It can also be noted that the Shannon entropy is bound by the interval $S \in \left[0, \log_{2}(N)\right]$, where the maximal value is reached when the fission source site spread is perfectly uniform. 
 
