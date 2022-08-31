@@ -1,5 +1,5 @@
 # Computational Reactor Physics - Shannon Entropy
-In this project the convergence of Monte Carlo simulations for nuclear fission reactors will be examined using the Shannon entropy. This is done using openMC and its python API together with numpy and matplotlib inside two jupyter notebooks, 'calculations.ipynb' and 'analysis.ipynb'. The results of the Monte Carlo calculations are stored in '/results', and the finalized plots can be found under '/plots'.
+In this project the convergence of Monte Carlo simulations for nuclear fission reactors will be examined using the Shannon entropy. This is done using openMC and its python API together with numpy and matplotlib inside two jupyter notebooks, 'calculations.ipynb' and 'analysis.ipynb'. The results of the Monte Carlo calculations are stored in '/results', and the finalized plots can be found under '/plots'. Special thanks to my teachers and Uppsala univeristy for helping me throghout the course and this project.
 
 ### Theory
 
